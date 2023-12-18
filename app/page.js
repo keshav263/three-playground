@@ -54,11 +54,11 @@ export default function Home() {
 
 						<button
 							onClick={() => {
-								router.push("/shapes");
+								router.push("/realistic-graphic");
 							}}
 							className={styles.button}
 						>
-							Shapes
+							Realistic Graphic
 						</button>
 					</div>
 				</Html>

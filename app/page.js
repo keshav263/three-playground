@@ -17,7 +17,7 @@ export default function Home() {
 		<main className={styles.main}>
 			<Canvas>
 				<Environment files="/env/alpha mayoris.hdr" background />
-				<OrbitControls />
+				<OrbitControls enableZoom={false} enableRotate={false} />
 				{/* <ambientLight intensity={1} />
 				<directionalLight color="red" position={[0, 0, 5]} />
 				<mesh>
@@ -59,6 +59,14 @@ export default function Home() {
 							className={styles.button}
 						>
 							Realistic Graphic
+						</button>
+						<button
+							onClick={() => {
+								router.push("/text-animation");
+							}}
+							className={styles.button}
+						>
+							Text Animation
 						</button>
 					</div>
 				</Html>
